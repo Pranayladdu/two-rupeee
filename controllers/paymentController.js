@@ -1,7 +1,7 @@
 import Razorpay from "razorpay";
 import crypto from "crypto";
 import dotenv from "dotenv";
-import Leaderboard from "../models/Leaderboard.js";
+import Leaderboard from "../models/leaderboard.js";
 
 dotenv.config();
 
