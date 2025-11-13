@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TwoRupee</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <meta name="theme-color" content="#16a34a" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>TwoRupee.com</h1>
+    </header>
+
+    <main>
+      <div class="product-card">
+        <div class="product-header">
+          <div class="tagline">
+            💵 Everyone is paying ₹2… Don’t be left behind! 💵
+          </div>
+
+          <h3>
+            See How Many People Joined — You Might Be Surprised How Big It’s
+            Grown! 💵
+          </h3>
+          <h3>It Could Be 10 Lakhs, 50 Lakhs, or Even 1 Crore+! ❤️‍🔥</h3>
+          <p>Check the total number of members who have joined so far.</p>
+
+          <div class="earnings-count">
+            Total members:
+            <span id="countHidden">
+              <span class="sent-count" id="totalCount">?</span>
+            </span>
+          </div>
+
+          <div class="stat">
+            <h3>Total Collection:</h3>
+            <p class="big-number" id="totalAmount">?</p>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="input-group">
+          <label for="amount">Enter Amount (₹)</label>
+          <input type="number" id="amount" min="2" value="2" />
+        </div>
+
+        <div class="note">
+          ⚠️ Your name will display on website if your amount is larger than
+          previous payment. Please fill correct name and phone number before
+          proceeding.
+        </div>
+
+        <div class="input-group">
+          <label for="userName">Name</label>
+          <input
+            type="text"
+            id="userName"
+            placeholder="Your Name"
+            maxlength="35"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="userPhone">Phone</label>
+          <input
+            type="tel"
+            id="userPhone"
+            placeholder="10-digit Phone"
+            maxlength="10"
+          />
+        </div>
+
+        <div id="error" class="error"></div>
+
+        <button class="pay-btn" id="payBtn" disabled>Pay & Join</button>
+        <br />
+        <div class="note">
+          ⚠️ This payment is a voluntary contribution to increase the live
+          counter on TwoRupee. No goods or services are provided.
+        </div>
+      </div>
+
+      <div class="leaderboard">
+        <h3>🏆 Top 3 Members</h3>
+        <ul>
+          <li>
+            <div class="entry">
+              <div class="amount"><span class="name"></span></div>
+              <div class="name"></div>
+            </div>
+          </li>
+          <li>
+            <div class="entry">
+              <div class="amount"><span class="name"></span></div>
+              <div class="name"></div>
+            </div>
+          </li>
+          <li>
+            <div class="entry">
+              <div class="amount"><span class="name"></span></div>
+              <div class="name"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>&copy; 2025 TwoRupee. All Rights Reserved.</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
