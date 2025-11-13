@@ -1,4 +1,4 @@
-const BACKEND_URL = "http://localhost:5000";
+const BACKEND_URL = "https://two-rupeee-6.onrender.com";
 
 const amountEl = document.getElementById("amount");
 const userNameEl = document.getElementById("userName");
